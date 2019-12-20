@@ -18,9 +18,6 @@ color ,red "	+"
 #
 syntax "git-commit" "COMMIT_EDITMSG|TAG_EDITMSG"
 
-# Commit message
-color yellow ".*"
-
 # Comments
 color brightblack "^#.*"
 
