@@ -4,7 +4,7 @@ color brightcyan "\<(true|false)\>"
 color cyan "^[[:space:]]*[^=]*="
 color brightmagenta "^[[:space:]]*\[.*\]$"
 color yellow ""(\\.|[^"])*"|'(\\.|[^'])*'"
-color brightblack "(^|[[:space:]])#([^{].*)?$"
+color black "(^|[[:space:]])#([^{].*)?$"
 color ,green "[[:space:]]+$"
 color ,red "	+"
 
@@ -33,18 +33,15 @@ color black "^#	[^/?*:;{}\\]+\.[^/?*:;{}\\]+$"
 
 color brightmagenta "^#[[:space:]]Changes.*[:]"
 color brightred "^#[[:space:]]Your branch and '[^']+"
-color brightblack "^#[[:space:]]Your branch and '"
+color black "^#[[:space:]]Your branch and '"
 color brightwhite "^#[[:space:]]On branch [^ ]+"
-color brightblack "^#[[:space:]]On branch"
+color black "^#[[:space:]]On branch"
 
 # Recolor hash symbols
-
-# Recolor hash symbols
-color brightblack "#"
+color black "#"
 
 # Trailing spaces (+LINT is not ok, git uses tabs)
 color ,green "[[:space:]]+$"
-
 
 # This syntax format is used for interactive rebasing
 syntax "git-rebase-todo" "git-rebase-todo"
@@ -53,7 +50,7 @@ syntax "git-rebase-todo" "git-rebase-todo"
 color yellow ".*"
 
 # Comments
-color brightblack "^#.*"
+color black "^#.*"
 
 # Rebase commands
 color green       "^(e|edit) [0-9a-f]{7,40}"
@@ -68,9 +65,6 @@ color brightred   "^(s|squash) [0-9a-f]{7,40}"
 color brightred   "^#  (s, squash)"
 color yellow      "^(x|exec) [^ ]+ [0-9a-f]{7,40}"
 color yellow      "^#  (x, exec)"
-
-# Recolor hash symbols
-color brightblack "#"
 
 # Commit IDs
 color brightblue "[0-9a-f]{7,40}"
