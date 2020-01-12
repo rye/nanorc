@@ -19,7 +19,7 @@ color ,red "	+"
 syntax "git-commit" "COMMIT_EDITMSG|TAG_EDITMSG"
 
 # Comments
-color brightblack "^#.*"
+color black "^#.*"
 
 # Files changes
 color white       "#[[:space:]](deleted|modified|new file|renamed):[[:space:]].*"
